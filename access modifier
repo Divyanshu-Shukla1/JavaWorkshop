@@ -1,0 +1,56 @@
+class Student_detailes {
+    public String name = "Abir";  //Public
+    protected String Gender = "Male";  //Protected
+    private int Mobile = 89570;      //Private
+    private String Emailid = "abir@123";
+    protected String Address = "prayagraj";
+    private int Adhar =  12345687;
+
+
+public void showname() {
+    System.out.println("Public:"+name);
+}
+
+protected void showgender() {
+    System.out.println("Protected :"+Gender);
+}
+
+private void showmobile() {
+    System.out.println("Private :"+Mobile);
+}
+
+private void showemail() {
+    System.out.println("Private :"+Emailid);
+}
+
+protected void showaddress() {
+    System.out.println("Protected :"+Address);
+}
+
+private void showAdhar() {
+    System.out.println("Private :"+Adhar);
+}
+
+public void privateshow() {
+    showmobile();
+    showemail();
+    showAdhar();
+}
+
+
+}
+
+public class Day_20{
+    public static void main(String[] args) {
+        Student_detailes student = new Student_detailes();
+        student.showname();
+        student.showgender();
+        student.showaddress();
+        student.privateshow();
+        //student.showmobile(); //private
+       // student.showemail();  //private
+        //student.showAdhar();  //private
+
+    }
+
+}
