@@ -1,0 +1,67 @@
+//public class Sep23 {
+//    public static void main(String[] args){
+//        String name= "Divyanshu";
+//        System.out.println(name.toUpperCase());
+//        System.out.println(name.toLowerCase());
+//        System.out.println(name.length());
+//        System.out.println(name.trim());
+//        System.out.println(name.charAt(4));
+//        System.out.println(name.substring(2, 5));
+//        System.out.println(name.contains("Heloo"));
+//        System.out.println(name.startsWith("D"));
+//        System.out.println(name.endsWith("u"));
+//        System.out.println(name.replace("u", "oo"));
+//        System.out.println(name.indexOf("y"));
+//        System.out.println(name.indexOf("yan"));
+//        System.out.println(name.concat( " Shukla"));
+//       
+//    }
+//}
+
+//String -->immutable ->once created can not be changed.  
+//2. String Builder 
+//Mutable: you can change without changing the variable
+//3. STring buffer :
+//mutable : link Stringbuilder , you can modify it without creating new objects .
+//Thread safe : mehtods are sychronised --> safe in multi threaded programs.
+//Slower than stringbuilder due to synchonization .
+//Use : when multiple thread access the same thing 
+//Example:
+//StringBuffer = new StringBuffer("Hello");
+//sbf.append("world"); //adds at the end
+//System.out.println("sbf");  output : Hello World
+
+
+
+
+//WAP to find and print longest word in a sentance...
+
+//import java.util.Scanner;
+//
+//public class Sep23 {
+//    public static void main(String[] args) {
+//        
+//        Scanner sc = new Scanner(System.in);
+//        
+//        System.out.print("Enter a sentence: ");
+//        String sentence = sc.nextLine();
+//
+//        String[] words = sentence.split(" "); 
+//
+//        String longestWord = " ";
+//        
+//    
+//       for (String word : words) {
+//            if (word.length() > longestWord.length()) {
+//                longestWord = word;
+//            }
+//        }
+//
+//        System.out.println("Longest word: " + longestWord);
+//        System.out.println("Length: " + longestWord.length());
+//    }
+//}
+
+
+
+//WAP to find wheather a string is palindrome or not
