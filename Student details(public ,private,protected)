@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class Student_Detail {
+   public static void main(String[] args) {
+       System.out.println("The registration form is starting");
+       Student c1 = new Student();
+       
+       System.out.println("Enter name:");
+       c1.Name();
+       
+       System.out.println("Enter gender:");
+       c1.gender();
+       
+       c1.address();
+       c1.Private();
+       c1.displayDetails();
+   }
+}
+
+class Student {
+   String name;
+   String gen;
+   int mob;
+   String email;
+   String add;
+   int adh;
+   Scanner scan=new Scanner(System.in);
+   public void Name() {
+       name=scan.nextLine();
+   }
+   protected void gender() {
+       gen=scan.nextLine();
+   }
+   protected void address() {
+       System.out.println("Enter address:");
+       add=scan.nextLine();
+   }
+   private void mobile() {
+       System.out.println("Enter mobile:");
+       mob=scan.nextInt();
+       scan.nextLine();
+   }
+   private void email() {
+       System.out.println("Enter email:");
+       email=scan.nextLine();
+       mobile();
+   }
+   void adhar() {
+       System.out.println("Enter Aadhaar number:");
+       adh=scan.nextInt();
+       scan.nextLine();
+       email();
+   }
+   public void Private() {
+       adhar();
+   }
+   public void displayDetails() {
+       System.out.println("\nStudent Details:");
+       System.out.println("Name: " +name);
+       System.out.println("Gender: " +gen);
+       System.out.println("Mobile: " +mob);
+       System.out.println("Email: " +email);
+       System.out.println("Address: " +add);
+       System.out.println("Aadhaar Number: " +adh);
+   }
+}
+
